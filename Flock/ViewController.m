@@ -1,31 +1,19 @@
 //
 //  ViewController.m
-//  Flock
+//  Pajaro
 //
-//  Created by Julio César Guzman on 3/25/14.
+//  Created by Julio César Guzman on 3/21/14.
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "MyScene.h"
+
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
 }
 
 - (BOOL)shouldAutorotate

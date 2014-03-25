@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  Flock
+//  Pajaro
 //
 
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
