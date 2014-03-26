@@ -8,7 +8,7 @@
 
 #import "FlockViewController.h"
 #import "FlockScene.h"
-#import "UIColor+RandomColor.h"
+#import "Scene.h"
 
 @interface FlockViewController ()
 
@@ -16,7 +16,7 @@
 
 @implementation FlockViewController
 {
-    FlockScene *scene;
+    FlockScene *flockScene;
 }
 
 - (void)viewDidLoad
@@ -32,11 +32,17 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    scene = [FlockScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    flockScene = [FlockScene sceneWithSize:skView.bounds.size];
+    flockScene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
+    [skView presentScene:flockScene];
+    
+    // A scene
+    Scene *scene = [Scene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:scene];
+    
     
 }
 

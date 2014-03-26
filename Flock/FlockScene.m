@@ -250,9 +250,9 @@
                                  cohesion:2
                              aggressivity:5
                                      fear:5
-                             maximumSpeed:100
+                             maximumSpeed:50
                                  position:location
-                                   radius:3];
+                                   radius:5];
         bird.color = [UIColor randomColorWithOffset:0.5];
         bird.colorBlendFactor = 1.0;
         [self addBird:bird];

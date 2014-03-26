@@ -31,6 +31,7 @@
 		4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */; };
 		43D21E0E18E275A900054648 /* Software Requirement Specification in Resources */ = {isa = PBXBuildFile; fileRef = 43D21E0D18E275A900054648 /* Software Requirement Specification */; };
 		43D21E1018E276A200054648 /* Game Design Document in Resources */ = {isa = PBXBuildFile; fileRef = 43D21E0F18E276A200054648 /* Game Design Document */; };
+		43DA40AC18E33F8A00F2238B /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA40AB18E33F8A00F2238B /* Scene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 		43D21E0D18E275A900054648 /* Software Requirement Specification */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Software Requirement Specification"; sourceTree = "<group>"; };
 		43D21E0F18E276A200054648 /* Game Design Document */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Game Design Document"; sourceTree = "<group>"; };
+		43DA40AA18E33F8A00F2238B /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		43DA40AB18E33F8A00F2238B /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				434497F418E24D9E00620AF1 /* AppDelegate.m */,
 				434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */,
 				434497F918E24D9E00620AF1 /* Main_iPad.storyboard */,
+				43DA40AA18E33F8A00F2238B /* Scene.h */,
+				43DA40AB18E33F8A00F2238B /* Scene.m */,
 				4344983518E24F8D00620AF1 /* Flock */,
 				4344983418E24E6E00620AF1 /* Categories */,
 				4344980218E24D9E00620AF1 /* Spaceship.png */,
@@ -321,6 +326,7 @@
 				4344983018E24DF000620AF1 /* FlockScene.m in Sources */,
 				4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */,
 				434497F518E24D9E00620AF1 /* AppDelegate.m in Sources */,
+				43DA40AC18E33F8A00F2238B /* Scene.m in Sources */,
 				434497F118E24D9E00620AF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
