@@ -16,7 +16,6 @@
 		434497F518E24D9E00620AF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 434497F418E24D9E00620AF1 /* AppDelegate.m */; };
 		434497F818E24D9E00620AF1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */; };
 		434497FB18E24D9E00620AF1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434497F918E24D9E00620AF1 /* Main_iPad.storyboard */; };
-		4344980118E24D9E00620AF1 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344980018E24D9E00620AF1 /* MyScene.m */; };
 		4344980318E24D9E00620AF1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344980218E24D9E00620AF1 /* Spaceship.png */; };
 		4344980518E24D9E00620AF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4344980418E24D9E00620AF1 /* Images.xcassets */; };
 		4344980C18E24D9E00620AF1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344980B18E24D9E00620AF1 /* XCTest.framework */; };
@@ -30,7 +29,6 @@
 		4344983018E24DF000620AF1 /* FlockScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982618E24DF000620AF1 /* FlockScene.m */; };
 		4344983118E24DF000620AF1 /* FlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982818E24DF000620AF1 /* FlockViewController.m */; };
 		4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */; };
-		4344983318E24DF000620AF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982C18E24DF000620AF1 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +55,6 @@
 		434497F418E24D9E00620AF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		434497F718E24D9E00620AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		434497FA18E24D9E00620AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		434497FF18E24D9E00620AF1 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		4344980018E24D9E00620AF1 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		4344980218E24D9E00620AF1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		4344980418E24D9E00620AF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4344980A18E24D9E00620AF1 /* FlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +72,6 @@
 		4344982818E24DF000620AF1 /* FlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlockViewController.m; sourceTree = "<group>"; };
 		4344982918E24DF000620AF1 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
 		4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
-		4344982B18E24DF000620AF1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4344982C18E24DF000620AF1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +137,6 @@
 				434497F418E24D9E00620AF1 /* AppDelegate.m */,
 				434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */,
 				434497F918E24D9E00620AF1 /* Main_iPad.storyboard */,
-				4344982B18E24DF000620AF1 /* ViewController.h */,
-				4344982C18E24DF000620AF1 /* ViewController.m */,
-				434497FF18E24D9E00620AF1 /* MyScene.h */,
-				4344980018E24D9E00620AF1 /* MyScene.m */,
 				4344983518E24F8D00620AF1 /* Flock */,
 				4344983418E24E6E00620AF1 /* Categories */,
 				4344980218E24D9E00620AF1 /* Spaceship.png */,
@@ -311,8 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4344983118E24DF000620AF1 /* FlockViewController.m in Sources */,
-				4344980118E24D9E00620AF1 /* MyScene.m in Sources */,
-				4344983318E24DF000620AF1 /* ViewController.m in Sources */,
 				4344982D18E24DF000620AF1 /* Agent.m in Sources */,
 				4344983018E24DF000620AF1 /* FlockScene.m in Sources */,
 				4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */,
