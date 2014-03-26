@@ -231,6 +231,58 @@
     
 }
 
+#pragma mark - Touch Events
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    /* Called when a touch begins */
+    
+    for (UITouch *touch in touches)
+    {
+        CGPoint location = [touch locationInNode:self];
+        
+        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        
+        sprite.position = location;
+        
+        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
+        
+        [sprite runAction:[SKAction repeatActionForever:action]];
+        
+        [self addChild:sprite];
+        
+        ////
+        
+        
+    }
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for (UITouch *touch in touches)
+    {
+        //Nacimiento
+        CGPoint location = [touch locationInNode:self];
+        Agent *bird;
+        bird = [Agent AgentWithImageNamed:@"bird"
+                                     name:@"name"
+                                     gene:random() % 2
+                                     life:100
+                                 strength:random() % 50
+                                   vision:100
+                                craziness:5
+                                 cohesion:2
+                             aggressivity:5
+                                     fear:5
+                             maximumSpeed:100
+                                 position:location
+                                   radius:3];
+        bird.color = [UIColor randomColorWithOffset:0.5];
+        bird.colorBlendFactor = 1.0;
+        [self addBird:bird];
+    }
+}
+
 #pragma mark - Other Gesture Stuff
 
 -(Agent *)nearestAgentToLocation:(CGPoint)location

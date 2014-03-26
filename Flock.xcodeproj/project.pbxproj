@@ -147,12 +147,7 @@
 				4344982C18E24DF000620AF1 /* ViewController.m */,
 				434497FF18E24D9E00620AF1 /* MyScene.h */,
 				4344980018E24D9E00620AF1 /* MyScene.m */,
-				4344982118E24DF000620AF1 /* Agent.h */,
-				4344982218E24DF000620AF1 /* Agent.m */,
-				4344982518E24DF000620AF1 /* FlockScene.h */,
-				4344982618E24DF000620AF1 /* FlockScene.m */,
-				4344982718E24DF000620AF1 /* FlockViewController.h */,
-				4344982818E24DF000620AF1 /* FlockViewController.m */,
+				4344983518E24F8D00620AF1 /* Flock */,
 				4344983418E24E6E00620AF1 /* Categories */,
 				4344980218E24D9E00620AF1 /* Spaceship.png */,
 				4344982318E24DF000620AF1 /* bird.png */,
@@ -199,6 +194,19 @@
 				4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		4344983518E24F8D00620AF1 /* Flock */ = {
+			isa = PBXGroup;
+			children = (
+				4344982718E24DF000620AF1 /* FlockViewController.h */,
+				4344982818E24DF000620AF1 /* FlockViewController.m */,
+				4344982518E24DF000620AF1 /* FlockScene.h */,
+				4344982618E24DF000620AF1 /* FlockScene.m */,
+				4344982118E24DF000620AF1 /* Agent.h */,
+				4344982218E24DF000620AF1 /* Agent.m */,
+			);
+			name = Flock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
