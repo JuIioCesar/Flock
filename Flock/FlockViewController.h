@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "FlockScene.h"
 
-@interface FlockViewController : UIViewController <UIGestureRecognizerDelegate>
-
+@interface FlockViewController : UIViewController 
 @end

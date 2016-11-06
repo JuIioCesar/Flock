@@ -9,7 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "Agent.h"
 
-@interface FlockScene : SKScene <SKPhysicsContactDelegate>
+@interface FlockScene : SKScene <SKPhysicsContactDelegate, UIGestureRecognizerDelegate>
 
 -(void)addBird:(Agent *)agent;
 

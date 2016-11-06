@@ -8,9 +8,8 @@
 
 #import "FlockViewController.h"
 #import "FlockScene.h"
-#import "Scene.h"
 
-@interface FlockViewController ()
+@interface FlockViewController ()  
 
 @end
 
@@ -39,10 +38,11 @@
     [skView presentScene:flockScene];
     
     // A scene
-    Scene *scene = [Scene sceneWithSize:skView.bounds.size];
+    FlockScene *scene = [FlockScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:scene];
     
+    [self.view.gestureRecognizers.firstObject setDelegate:scene];
     
 }
 
