@@ -7,7 +7,5 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FlockScene.h"
-
-@interface FlockViewController : UIViewController 
+@interface FlockViewController : UIViewController
 @end

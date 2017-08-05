@@ -15,9 +15,9 @@
 		4274386A1F35839E008C89E7 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982218E24DF000620AF1 /* Agent.m */; };
 		4274386B1F35839E008C89E7 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */; };
 		4274386C1F3583A7008C89E7 /* FlockViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982718E24DF000620AF1 /* FlockViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4274386D1F3583A7008C89E7 /* FlockScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982518E24DF000620AF1 /* FlockScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4274386E1F3583A7008C89E7 /* Agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982118E24DF000620AF1 /* Agent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4274386F1F3583A7008C89E7 /* UIColor+RandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982918E24DF000620AF1 /* UIColor+RandomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4274386D1F3583A7008C89E7 /* FlockScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982518E24DF000620AF1 /* FlockScene.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4274386E1F3583A7008C89E7 /* Agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982118E24DF000620AF1 /* Agent.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4274386F1F3583A7008C89E7 /* UIColor+RandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982918E24DF000620AF1 /* UIColor+RandomColor.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		434497E318E24D9E00620AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E218E24D9E00620AF1 /* Foundation.framework */; };
 		434497E518E24D9E00620AF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E418E24D9E00620AF1 /* CoreGraphics.framework */; };
 		434497E718E24D9E00620AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E618E24D9E00620AF1 /* UIKit.framework */; };
