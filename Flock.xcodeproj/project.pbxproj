@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4274385F1F358344008C89E7 /* Flock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4274385D1F358344008C89E7 /* Flock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427438621F358344008C89E7 /* Flock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4274385B1F358344008C89E7 /* Flock.framework */; };
+		427438631F358344008C89E7 /* Flock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4274385B1F358344008C89E7 /* Flock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		427438681F35839E008C89E7 /* FlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982818E24DF000620AF1 /* FlockViewController.m */; };
+		427438691F35839E008C89E7 /* FlockScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982618E24DF000620AF1 /* FlockScene.m */; };
+		4274386A1F35839E008C89E7 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982218E24DF000620AF1 /* Agent.m */; };
+		4274386B1F35839E008C89E7 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */; };
+		4274386C1F3583A7008C89E7 /* FlockViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982718E24DF000620AF1 /* FlockViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4274386D1F3583A7008C89E7 /* FlockScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982518E24DF000620AF1 /* FlockScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4274386E1F3583A7008C89E7 /* Agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982118E24DF000620AF1 /* Agent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4274386F1F3583A7008C89E7 /* UIColor+RandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982918E24DF000620AF1 /* UIColor+RandomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		434497E318E24D9E00620AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E218E24D9E00620AF1 /* Foundation.framework */; };
 		434497E518E24D9E00620AF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E418E24D9E00620AF1 /* CoreGraphics.framework */; };
 		434497E718E24D9E00620AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E618E24D9E00620AF1 /* UIKit.framework */; };
@@ -23,15 +34,18 @@
 		4344980E18E24D9E00620AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E618E24D9E00620AF1 /* UIKit.framework */; };
 		4344981618E24D9E00620AF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4344981418E24D9E00620AF1 /* InfoPlist.strings */; };
 		4344981818E24D9E00620AF1 /* FlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344981718E24D9E00620AF1 /* FlockTests.m */; };
-		4344982D18E24DF000620AF1 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982218E24DF000620AF1 /* Agent.m */; };
 		4344982E18E24DF000620AF1 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344982318E24DF000620AF1 /* bird.png */; };
 		4344982F18E24DF000620AF1 /* blop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4344982418E24DF000620AF1 /* blop.wav */; };
-		4344983018E24DF000620AF1 /* FlockScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982618E24DF000620AF1 /* FlockScene.m */; };
-		4344983118E24DF000620AF1 /* FlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982818E24DF000620AF1 /* FlockViewController.m */; };
-		4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		427438601F358344008C89E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 434497D718E24D9E00620AF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4274385A1F358344008C89E7;
+			remoteInfo = Flock;
+		};
 		4344980F18E24D9E00620AF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 434497D718E24D9E00620AF1 /* Project object */;
@@ -41,8 +55,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		427438671F358344008C89E7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				427438631F358344008C89E7 /* Flock.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		434497DF18E24D9E00620AF1 /* Flock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4274385B1F358344008C89E7 /* Flock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4274385D1F358344008C89E7 /* Flock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flock.h; sourceTree = "<group>"; };
+		4274385E1F358344008C89E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434497DF18E24D9E00620AF1 /* Flock-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flock-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434497E218E24D9E00620AF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		434497E418E24D9E00620AF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		434497E618E24D9E00620AF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -75,11 +106,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		427438571F358344008C89E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		434497DC18E24D9E00620AF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				434497E518E24D9E00620AF1 /* CoreGraphics.framework in Frameworks */,
+				427438621F358344008C89E7 /* Flock.framework in Frameworks */,
 				434497E718E24D9E00620AF1 /* UIKit.framework in Frameworks */,
 				434497E918E24D9E00620AF1 /* SpriteKit.framework in Frameworks */,
 				434497E318E24D9E00620AF1 /* Foundation.framework in Frameworks */,
@@ -99,11 +138,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4274385C1F358344008C89E7 /* Flock */ = {
+			isa = PBXGroup;
+			children = (
+				4274385D1F358344008C89E7 /* Flock.h */,
+				4344983518E24F8D00620AF1 /* Flock */,
+				4344983418E24E6E00620AF1 /* Categories */,
+				4274385E1F358344008C89E7 /* Info.plist */,
+			);
+			path = Flock;
+			sourceTree = "<group>";
+		};
 		434497D618E24D9E00620AF1 = {
 			isa = PBXGroup;
 			children = (
-				434497EA18E24D9E00620AF1 /* Flock */,
+				434497EA18E24D9E00620AF1 /* Flock Demo */,
 				4344981118E24D9E00620AF1 /* FlockTests */,
+				4274385C1F358344008C89E7 /* Flock */,
 				434497E118E24D9E00620AF1 /* Frameworks */,
 				434497E018E24D9E00620AF1 /* Products */,
 			);
@@ -112,8 +163,9 @@
 		434497E018E24D9E00620AF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				434497DF18E24D9E00620AF1 /* Flock.app */,
+				434497DF18E24D9E00620AF1 /* Flock-Demo.app */,
 				4344980A18E24D9E00620AF1 /* FlockTests.xctest */,
+				4274385B1F358344008C89E7 /* Flock.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,21 +182,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		434497EA18E24D9E00620AF1 /* Flock */ = {
+		434497EA18E24D9E00620AF1 /* Flock Demo */ = {
 			isa = PBXGroup;
 			children = (
 				434497F318E24D9E00620AF1 /* AppDelegate.h */,
 				434497F418E24D9E00620AF1 /* AppDelegate.m */,
 				434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */,
 				434497F918E24D9E00620AF1 /* Main_iPad.storyboard */,
-				4344983518E24F8D00620AF1 /* Flock */,
-				4344983418E24E6E00620AF1 /* Categories */,
 				4344980218E24D9E00620AF1 /* Spaceship.png */,
 				4344982318E24DF000620AF1 /* bird.png */,
 				4344982418E24DF000620AF1 /* blop.wav */,
 				4344980418E24D9E00620AF1 /* Images.xcassets */,
 				434497EB18E24D9E00620AF1 /* Supporting Files */,
 			);
+			name = "Flock Demo";
 			path = Flock;
 			sourceTree = "<group>";
 		};
@@ -201,14 +252,30 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		427438581F358344008C89E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4274386E1F3583A7008C89E7 /* Agent.h in Headers */,
+				4274386F1F3583A7008C89E7 /* UIColor+RandomColor.h in Headers */,
+				4274385F1F358344008C89E7 /* Flock.h in Headers */,
+				4274386C1F3583A7008C89E7 /* FlockViewController.h in Headers */,
+				4274386D1F3583A7008C89E7 /* FlockScene.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		434497DE18E24D9E00620AF1 /* Flock */ = {
+		4274385A1F358344008C89E7 /* Flock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4344981B18E24D9E00620AF1 /* Build configuration list for PBXNativeTarget "Flock" */;
+			buildConfigurationList = 427438641F358344008C89E7 /* Build configuration list for PBXNativeTarget "Flock" */;
 			buildPhases = (
-				434497DB18E24D9E00620AF1 /* Sources */,
-				434497DC18E24D9E00620AF1 /* Frameworks */,
-				434497DD18E24D9E00620AF1 /* Resources */,
+				427438561F358344008C89E7 /* Sources */,
+				427438571F358344008C89E7 /* Frameworks */,
+				427438581F358344008C89E7 /* Headers */,
+				427438591F358344008C89E7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -216,7 +283,26 @@
 			);
 			name = Flock;
 			productName = Flock;
-			productReference = 434497DF18E24D9E00620AF1 /* Flock.app */;
+			productReference = 4274385B1F358344008C89E7 /* Flock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		434497DE18E24D9E00620AF1 /* Flock-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4344981B18E24D9E00620AF1 /* Build configuration list for PBXNativeTarget "Flock-Demo" */;
+			buildPhases = (
+				434497DB18E24D9E00620AF1 /* Sources */,
+				434497DC18E24D9E00620AF1 /* Frameworks */,
+				434497DD18E24D9E00620AF1 /* Resources */,
+				427438671F358344008C89E7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427438611F358344008C89E7 /* PBXTargetDependency */,
+			);
+			name = "Flock-Demo";
+			productName = Flock;
+			productReference = 434497DF18E24D9E00620AF1 /* Flock-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4344980918E24D9E00620AF1 /* FlockTests */ = {
@@ -246,6 +332,10 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					4274385A1F358344008C89E7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					4344980918E24D9E00620AF1 = {
 						TestTargetID = 434497DE18E24D9E00620AF1;
 					};
@@ -264,13 +354,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				434497DE18E24D9E00620AF1 /* Flock */,
+				434497DE18E24D9E00620AF1 /* Flock-Demo */,
 				4344980918E24D9E00620AF1 /* FlockTests */,
+				4274385A1F358344008C89E7 /* Flock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		427438591F358344008C89E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		434497DD18E24D9E00620AF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,14 +394,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		427438561F358344008C89E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4274386B1F35839E008C89E7 /* UIColor+RandomColor.m in Sources */,
+				4274386A1F35839E008C89E7 /* Agent.m in Sources */,
+				427438691F35839E008C89E7 /* FlockScene.m in Sources */,
+				427438681F35839E008C89E7 /* FlockViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		434497DB18E24D9E00620AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4344983118E24DF000620AF1 /* FlockViewController.m in Sources */,
-				4344982D18E24DF000620AF1 /* Agent.m in Sources */,
-				4344983018E24DF000620AF1 /* FlockScene.m in Sources */,
-				4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */,
 				434497F518E24D9E00620AF1 /* AppDelegate.m in Sources */,
 				434497F118E24D9E00620AF1 /* main.m in Sources */,
 			);
@@ -320,9 +425,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		427438611F358344008C89E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4274385A1F358344008C89E7 /* Flock */;
+			targetProxy = 427438601F358344008C89E7 /* PBXContainerItemProxy */;
+		};
 		4344981018E24D9E00620AF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 434497DE18E24D9E00620AF1 /* Flock */;
+			target = 434497DE18E24D9E00620AF1 /* Flock-Demo */;
 			targetProxy = 4344980F18E24D9E00620AF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,6 +473,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		427438651F358344008C89E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Flock/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Julio.Flock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		427438661F358344008C89E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Flock/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Julio.Flock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4344981918E24D9E00620AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +617,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flock/Flock-Prefix.pch";
 				INFOPLIST_FILE = "Flock/Flock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -457,6 +633,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flock/Flock-Prefix.pch";
 				INFOPLIST_FILE = "Flock/Flock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -506,6 +684,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		427438641F358344008C89E7 /* Build configuration list for PBXNativeTarget "Flock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427438651F358344008C89E7 /* Debug */,
+				427438661F358344008C89E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		434497DA18E24D9E00620AF1 /* Build configuration list for PBXProject "Flock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -515,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4344981B18E24D9E00620AF1 /* Build configuration list for PBXNativeTarget "Flock" */ = {
+		4344981B18E24D9E00620AF1 /* Build configuration list for PBXNativeTarget "Flock-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4344981C18E24D9E00620AF1 /* Debug */,
