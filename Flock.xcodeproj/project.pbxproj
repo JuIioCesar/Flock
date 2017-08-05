@@ -29,8 +29,6 @@
 		4344983018E24DF000620AF1 /* FlockScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982618E24DF000620AF1 /* FlockScene.m */; };
 		4344983118E24DF000620AF1 /* FlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982818E24DF000620AF1 /* FlockViewController.m */; };
 		4344983218E24DF000620AF1 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */; };
-		43D21E0E18E275A900054648 /* Software Requirement Specification in Resources */ = {isa = PBXBuildFile; fileRef = 43D21E0D18E275A900054648 /* Software Requirement Specification */; };
-		43D21E1018E276A200054648 /* Game Design Document in Resources */ = {isa = PBXBuildFile; fileRef = 43D21E0F18E276A200054648 /* Game Design Document */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +72,6 @@
 		4344982818E24DF000620AF1 /* FlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlockViewController.m; sourceTree = "<group>"; };
 		4344982918E24DF000620AF1 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
 		4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
-		43D21E0D18E275A900054648 /* Software Requirement Specification */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Software Requirement Specification"; sourceTree = "<group>"; };
-		43D21E0F18E276A200054648 /* Game Design Document */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Game Design Document"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +133,6 @@
 		434497EA18E24D9E00620AF1 /* Flock */ = {
 			isa = PBXGroup;
 			children = (
-				43D21E1118E2779500054648 /* Documentation */,
 				434497F318E24D9E00620AF1 /* AppDelegate.h */,
 				434497F418E24D9E00620AF1 /* AppDelegate.m */,
 				434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */,
@@ -202,15 +197,6 @@
 				4344982218E24DF000620AF1 /* Agent.m */,
 			);
 			name = Flock;
-			sourceTree = "<group>";
-		};
-		43D21E1118E2779500054648 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				43D21E0D18E275A900054648 /* Software Requirement Specification */,
-				43D21E0F18E276A200054648 /* Game Design Document */,
-			);
-			name = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +277,7 @@
 			files = (
 				4344980318E24D9E00620AF1 /* Spaceship.png in Resources */,
 				4344982F18E24DF000620AF1 /* blop.wav in Resources */,
-				43D21E1018E276A200054648 /* Game Design Document in Resources */,
 				4344980518E24D9E00620AF1 /* Images.xcassets in Resources */,
-				43D21E0E18E275A900054648 /* Software Requirement Specification in Resources */,
 				4344982E18E24DF000620AF1 /* bird.png in Resources */,
 				434497FB18E24D9E00620AF1 /* Main_iPad.storyboard in Resources */,
 				434497F818E24D9E00620AF1 /* Main_iPhone.storyboard in Resources */,
