@@ -18,6 +18,9 @@
 		4274386D1F3583A7008C89E7 /* FlockScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982518E24DF000620AF1 /* FlockScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4274386E1F3583A7008C89E7 /* Agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982118E24DF000620AF1 /* Agent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4274386F1F3583A7008C89E7 /* UIColor+RandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982918E24DF000620AF1 /* UIColor+RandomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427438701F358AF6008C89E7 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344980218E24D9E00620AF1 /* Spaceship.png */; };
+		427438711F358AF6008C89E7 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344982318E24DF000620AF1 /* bird.png */; };
+		427438721F358AF6008C89E7 /* blop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4344982418E24DF000620AF1 /* blop.wav */; };
 		434497E318E24D9E00620AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E218E24D9E00620AF1 /* Foundation.framework */; };
 		434497E518E24D9E00620AF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E418E24D9E00620AF1 /* CoreGraphics.framework */; };
 		434497E718E24D9E00620AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E618E24D9E00620AF1 /* UIKit.framework */; };
@@ -27,15 +30,12 @@
 		434497F518E24D9E00620AF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 434497F418E24D9E00620AF1 /* AppDelegate.m */; };
 		434497F818E24D9E00620AF1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */; };
 		434497FB18E24D9E00620AF1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434497F918E24D9E00620AF1 /* Main_iPad.storyboard */; };
-		4344980318E24D9E00620AF1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344980218E24D9E00620AF1 /* Spaceship.png */; };
 		4344980518E24D9E00620AF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4344980418E24D9E00620AF1 /* Images.xcassets */; };
 		4344980C18E24D9E00620AF1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344980B18E24D9E00620AF1 /* XCTest.framework */; };
 		4344980D18E24D9E00620AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E218E24D9E00620AF1 /* Foundation.framework */; };
 		4344980E18E24D9E00620AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E618E24D9E00620AF1 /* UIKit.framework */; };
 		4344981618E24D9E00620AF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4344981418E24D9E00620AF1 /* InfoPlist.strings */; };
 		4344981818E24D9E00620AF1 /* FlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344981718E24D9E00620AF1 /* FlockTests.m */; };
-		4344982E18E24DF000620AF1 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344982318E24DF000620AF1 /* bird.png */; };
-		4344982F18E24DF000620AF1 /* blop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4344982418E24DF000620AF1 /* blop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				4274385D1F358344008C89E7 /* Flock.h */,
+				4344980218E24D9E00620AF1 /* Spaceship.png */,
+				4344982318E24DF000620AF1 /* bird.png */,
+				4344982418E24DF000620AF1 /* blop.wav */,
 				4344983518E24F8D00620AF1 /* Flock */,
 				4344983418E24E6E00620AF1 /* Categories */,
 				4274385E1F358344008C89E7 /* Info.plist */,
@@ -189,9 +192,6 @@
 				434497F418E24D9E00620AF1 /* AppDelegate.m */,
 				434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */,
 				434497F918E24D9E00620AF1 /* Main_iPad.storyboard */,
-				4344980218E24D9E00620AF1 /* Spaceship.png */,
-				4344982318E24DF000620AF1 /* bird.png */,
-				4344982418E24DF000620AF1 /* blop.wav */,
 				4344980418E24D9E00620AF1 /* Images.xcassets */,
 				434497EB18E24D9E00620AF1 /* Supporting Files */,
 			);
@@ -366,6 +366,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427438721F358AF6008C89E7 /* blop.wav in Resources */,
+				427438711F358AF6008C89E7 /* bird.png in Resources */,
+				427438701F358AF6008C89E7 /* Spaceship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4344980318E24D9E00620AF1 /* Spaceship.png in Resources */,
-				4344982F18E24DF000620AF1 /* blop.wav in Resources */,
 				4344980518E24D9E00620AF1 /* Images.xcassets in Resources */,
-				4344982E18E24DF000620AF1 /* bird.png in Resources */,
 				434497FB18E24D9E00620AF1 /* Main_iPad.storyboard in Resources */,
 				434497F818E24D9E00620AF1 /* Main_iPhone.storyboard in Resources */,
 				434497EF18E24D9E00620AF1 /* InfoPlist.strings in Resources */,
