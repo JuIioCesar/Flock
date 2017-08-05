@@ -18,9 +18,6 @@
 		4274386D1F3583A7008C89E7 /* FlockScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982518E24DF000620AF1 /* FlockScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4274386E1F3583A7008C89E7 /* Agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982118E24DF000620AF1 /* Agent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4274386F1F3583A7008C89E7 /* UIColor+RandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4344982918E24DF000620AF1 /* UIColor+RandomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427438701F358AF6008C89E7 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344980218E24D9E00620AF1 /* Spaceship.png */; };
-		427438711F358AF6008C89E7 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 4344982318E24DF000620AF1 /* bird.png */; };
-		427438721F358AF6008C89E7 /* blop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4344982418E24DF000620AF1 /* blop.wav */; };
 		434497E318E24D9E00620AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E218E24D9E00620AF1 /* Foundation.framework */; };
 		434497E518E24D9E00620AF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E418E24D9E00620AF1 /* CoreGraphics.framework */; };
 		434497E718E24D9E00620AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434497E618E24D9E00620AF1 /* UIKit.framework */; };
@@ -86,7 +83,6 @@
 		434497F418E24D9E00620AF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		434497F718E24D9E00620AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		434497FA18E24D9E00620AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		4344980218E24D9E00620AF1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		4344980418E24D9E00620AF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4344980A18E24D9E00620AF1 /* FlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4344980B18E24D9E00620AF1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -95,8 +91,6 @@
 		4344981718E24D9E00620AF1 /* FlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlockTests.m; sourceTree = "<group>"; };
 		4344982118E24DF000620AF1 /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		4344982218E24DF000620AF1 /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
-		4344982318E24DF000620AF1 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
-		4344982418E24DF000620AF1 /* blop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blop.wav; sourceTree = "<group>"; };
 		4344982518E24DF000620AF1 /* FlockScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlockScene.h; sourceTree = "<group>"; };
 		4344982618E24DF000620AF1 /* FlockScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlockScene.m; sourceTree = "<group>"; };
 		4344982718E24DF000620AF1 /* FlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlockViewController.h; sourceTree = "<group>"; };
@@ -145,9 +139,6 @@
 				4344983518E24F8D00620AF1 /* Flock */,
 				4274385D1F358344008C89E7 /* Flock.h */,
 				4274385E1F358344008C89E7 /* Info.plist */,
-				4344980218E24D9E00620AF1 /* Spaceship.png */,
-				4344982318E24DF000620AF1 /* bird.png */,
-				4344982418E24DF000620AF1 /* blop.wav */,
 			);
 			path = Flock;
 			sourceTree = "<group>";
@@ -195,7 +186,6 @@
 				434497F918E24D9E00620AF1 /* Main_iPad.storyboard */,
 				434497F618E24D9E00620AF1 /* Main_iPhone.storyboard */,
 			);
-			name = "Flock Demo";
 			path = "Flock Demo";
 			sourceTree = "<group>";
 		};
@@ -207,7 +197,6 @@
 				434497ED18E24D9E00620AF1 /* InfoPlist.strings */,
 				434497F018E24D9E00620AF1 /* main.m */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -226,7 +215,6 @@
 				4344981318E24D9E00620AF1 /* FlockTests-Info.plist */,
 				4344981418E24D9E00620AF1 /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -236,7 +224,6 @@
 				4344982918E24DF000620AF1 /* UIColor+RandomColor.h */,
 				4344982A18E24DF000620AF1 /* UIColor+RandomColor.m */,
 			);
-			name = Categories;
 			path = Categories;
 			sourceTree = "<group>";
 		};
@@ -250,7 +237,6 @@
 				4344982718E24DF000620AF1 /* FlockViewController.h */,
 				4344982818E24DF000620AF1 /* FlockViewController.m */,
 			);
-			name = Flock;
 			path = Flock;
 			sourceTree = "<group>";
 		};
@@ -334,7 +320,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = ___FULLUSERNAME___;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					4274385A1F358344008C89E7 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -370,9 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427438721F358AF6008C89E7 /* blop.wav in Resources */,
-				427438711F358AF6008C89E7 /* bird.png in Resources */,
-				427438701F358AF6008C89E7 /* Spaceship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +682,7 @@
 				427438661F358344008C89E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		434497DA18E24D9E00620AF1 /* Build configuration list for PBXProject "Flock" */ = {
 			isa = XCConfigurationList;
