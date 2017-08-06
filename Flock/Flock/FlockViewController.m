@@ -9,8 +9,7 @@
 #import "FlockViewController.h"
 #import "FlockScene.h"
 
-@interface FlockViewController ()  
-
+@interface FlockViewController ()
 @end
 
 @implementation FlockViewController
@@ -21,30 +20,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
-    // SPRITE KIT
-    
-    // Configure the view.
+    [self configureView];
+}
+
+- (void)configureView
+{
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
     flockScene = [FlockScene sceneWithSize:skView.bounds.size];
     flockScene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
+    [flockScene setImageName:self.imageName];
     [skView presentScene:flockScene];
-    
-    // A scene
-    FlockScene *scene = [FlockScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    [skView presentScene:scene];
-    
-    [self.view.gestureRecognizers.firstObject setDelegate:scene];
-    
+    [self.view.gestureRecognizers.firstObject setDelegate:flockScene];
 }
-
 
 @end

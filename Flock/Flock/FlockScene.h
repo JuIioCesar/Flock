@@ -10,7 +10,6 @@
 #import "Agent.h"
 
 @interface FlockScene : SKScene <SKPhysicsContactDelegate, UIGestureRecognizerDelegate>
-
+-(void)setImageName:(NSString*)name;
 -(void)addBird:(Agent *)agent;
-
 @end

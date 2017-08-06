@@ -13,36 +13,40 @@
 #define AGENT_ANGLE M_PI/4
 
 @interface FlockScene()
-
+@property(nonatomic, strong) SKNode *world;
+@property(nonatomic, strong) SKSpriteNode *backgroundNode;
+@property(nonatomic, strong) SKSpriteNode *agentNode;
+@property(nonatomic, strong) NSString *imageName;
 @end
 
 @implementation FlockScene
-{
-    SKNode *world;
-    SKSpriteNode *backgroundNode;
-    SKSpriteNode *agentNode;
-}
 
 -(id)initWithSize:(CGSize)size
 {
- 
     if (self = [super initWithSize:size])
     {
-        /* Setup your scene here */
-        self.backgroundColor = [SKColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
-        [self setupPhysicsWorld];
-        [self setupNodeTree];
+        [self setupScene];
     }
-        
     return self;
-    
 }
 
 #pragma mark - Setup
 
+- (void)setupScene
+{
+    [self setupBackground];
+    [self setupPhysicsWorld];
+    [self setupNodeTree];
+}
+
+- (void)setupBackground
+{
+    self.backgroundColor = [SKColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+}
+
 -(void)setupPhysicsWorld
 {
-    self.physicsBody = [SKPhysicsBody new];//bodyWithEdgeLoopFromRect:self.frame];
+    self.physicsBody = [SKPhysicsBody new];
     self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
     self.physicsWorld.contactDelegate = self;
 }
@@ -50,27 +54,27 @@
 -(void)setupNodeTree
 {
     //Make world and add it to the Scene
-    world = [SKSpriteNode node];
-    [self addChild:world];
+    _world = [SKSpriteNode node];
+    [self addChild:_world];
     
     //Make background node and add it to the world
-    backgroundNode = [SKSpriteNode node];
-    backgroundNode.anchorPoint = CGPointMake(0.0, 0.0);
-    backgroundNode.position = self.position;
-    backgroundNode.size = self.frame.size;
-    [world addChild:backgroundNode];
+    _backgroundNode = [SKSpriteNode node];
+    _backgroundNode.anchorPoint = CGPointMake(0.0, 0.0);
+    _backgroundNode.position = self.position;
+    _backgroundNode.size = self.frame.size;
+    [_world addChild:_backgroundNode];
 
     //Make agent node and add it to the world
-    agentNode = [SKSpriteNode node];
-    agentNode.position = self.position;
-    [world addChild:agentNode];
+    _agentNode = [SKSpriteNode node];
+    _agentNode.position = self.position;
+    [_world addChild:_agentNode];
 }
 
 #pragma mark - Add Bird.
 
 -(void)addBird:(Agent *)agent
 {
-    [agentNode addChild:agent];
+    [_agentNode addChild:agent];
 }
 
 #pragma mark - Sprite Kit Cycle & Flock Physics
@@ -79,7 +83,7 @@
 {
     /* Called before each frame is rendered */
     //Flock physics
-    for(Agent *child in agentNode.children)
+    for(Agent *child in _agentNode.children)
     {
         //Angulo aleatorio.
         CGFloat _theta =  ( random() % 360 ) * M_PI / 180;
@@ -87,7 +91,7 @@
         //Craziness - Movimiento Aleatorio.
         [child.physicsBody applyForce:CGVectorMake( child.craziness * cosf(_theta), child.craziness * sinf(_theta))];
         
-        for (Agent *otherChild in agentNode.children)
+        for (Agent *otherChild in _agentNode.children)
         {
             if (child == otherChild) break;
             float dx = otherChild.position.x - child.position.x;
@@ -194,7 +198,7 @@
 
 -(void)didSimulatePhysics
 {
-    for (Agent *child in agentNode.children)
+    for (Agent *child in _agentNode.children)
     {
         //Angulo del pajaro.
         float a = atan2f(child.physicsBody.velocity.dy,child.physicsBody.velocity.dx);
@@ -233,6 +237,10 @@
 
 #pragma mark - Touch Events
 
+- (void)setImageName:(NSString *)imageName {
+    _imageName = imageName;
+}
+
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     for (UITouch *touch in touches)
@@ -240,7 +248,8 @@
         //Nacimiento
         CGPoint location = [touch locationInNode:self];
         Agent *bird;
-        bird = [Agent AgentWithImageNamed:@"bird"
+        NSString *image = self.imageName ? : @"";
+        bird = [Agent AgentWithImageNamed:image
                                      name:@"name"
                                      gene:random() % 2
                                      life:100
@@ -252,7 +261,7 @@
                                      fear:5
                              maximumSpeed:50
                                  position:location
-                                   radius:5];
+                                   radius:10];
         bird.color = [UIColor randomColorWithOffset:0.5];
         bird.colorBlendFactor = 1.0;
         [self addBird:bird];
@@ -265,7 +274,7 @@
 {
     CGFloat minimumDistance = INFINITY;
     Agent *nearestAgent;
-    for (Agent *child in agentNode.children)
+    for (Agent *child in _agentNode.children)
     {
         CGFloat currentDistanceToChild = [self distanceBetweenPointA:location andPointB:child.position];
         minimumDistance = fmin(currentDistanceToChild, minimumDistance);
