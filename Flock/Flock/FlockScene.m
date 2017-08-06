@@ -16,7 +16,7 @@
 @property(nonatomic, strong) SKNode *world;
 @property(nonatomic, strong) SKSpriteNode *backgroundNode;
 @property(nonatomic, strong) SKSpriteNode *agentNode;
-@property(nonatomic, strong) NSString *imageName;
+@property(nonatomic, copy) NSString *imageName;
 @end
 
 @implementation FlockScene

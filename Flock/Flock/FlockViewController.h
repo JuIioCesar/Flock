@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 @interface FlockViewController : UIViewController
-@property(nonatomic, strong) IBInspectable NSString *imageName;
+@property(nonatomic, copy) IBInspectable NSString *imageName;
 @end
