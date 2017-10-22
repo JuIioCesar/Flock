@@ -132,6 +132,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42535B8A1F9CFB5700121DAA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4344982118E24DF000620AF1 /* Agent.h */,
+				4344982218E24DF000620AF1 /* Agent.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		42535B8B1F9CFB8500121DAA /* SpriteKit Client */ = {
+			isa = PBXGroup;
+			children = (
+				4344982518E24DF000620AF1 /* FlockScene.h */,
+				4344982618E24DF000620AF1 /* FlockScene.m */,
+			);
+			path = "SpriteKit Client";
+			sourceTree = "<group>";
+		};
+		42535B8C1F9CFBB600121DAA /* UIKit Client */ = {
+			isa = PBXGroup;
+			children = (
+				4344982718E24DF000620AF1 /* FlockViewController.h */,
+				4344982818E24DF000620AF1 /* FlockViewController.m */,
+			);
+			path = "UIKit Client";
+			sourceTree = "<group>";
+		};
+		42535B8E1F9CFBD900121DAA /* Framework clients */ = {
+			isa = PBXGroup;
+			children = (
+				42535B8B1F9CFB8500121DAA /* SpriteKit Client */,
+				42535B8C1F9CFBB600121DAA /* UIKit Client */,
+			);
+			path = "Framework clients";
+			sourceTree = "<group>";
+		};
 		4274385C1F358344008C89E7 /* Flock */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,12 +266,8 @@
 		4344983518E24F8D00620AF1 /* Flock */ = {
 			isa = PBXGroup;
 			children = (
-				4344982118E24DF000620AF1 /* Agent.h */,
-				4344982218E24DF000620AF1 /* Agent.m */,
-				4344982518E24DF000620AF1 /* FlockScene.h */,
-				4344982618E24DF000620AF1 /* FlockScene.m */,
-				4344982718E24DF000620AF1 /* FlockViewController.h */,
-				4344982818E24DF000620AF1 /* FlockViewController.m */,
+				42535B8A1F9CFB5700121DAA /* Entities */,
+				42535B8E1F9CFBD900121DAA /* Framework clients */,
 			);
 			path = Flock;
 			sourceTree = "<group>";
