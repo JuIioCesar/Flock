@@ -237,7 +237,7 @@
 
 #pragma mark - Touch Events
 
-- (void)setImageName:(NSString *)imageName {
+- (void)set:(NSString *)imageName {
     _imageName = imageName;
 }
 

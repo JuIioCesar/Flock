@@ -30,7 +30,7 @@
     skView.showsNodeCount = YES;
     flockScene = [FlockScene sceneWithSize:skView.bounds.size];
     flockScene.scaleMode = SKSceneScaleModeAspectFill;
-    [flockScene setImageName:self.imageName];
+    [flockScene set:self.imageName];
     [skView presentScene:flockScene];
     [self.view.gestureRecognizers.firstObject setDelegate:flockScene];
 }
