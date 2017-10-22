@@ -72,7 +72,7 @@
 
 #pragma mark - Add Bird.
 
--(void)addBird:(Agent *)agent
+-(void)add:(Agent *)agent
 {
     [_agentNode addChild:agent];
 }
@@ -264,7 +264,7 @@
                                    radius:10];
         bird.color = [UIColor randomColorWithOffset:0.5];
         bird.colorBlendFactor = 1.0;
-        [self addBird:bird];
+        [self add:bird];
     }
 }
 

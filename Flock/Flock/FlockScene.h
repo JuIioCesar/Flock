@@ -11,5 +11,5 @@
 
 @interface FlockScene : SKScene <SKPhysicsContactDelegate, UIGestureRecognizerDelegate>
 -(void)setImageName:(NSString*)name;
--(void)addBird:(Agent *)agent;
+-(void)add:(Agent *)agent;
 @end
